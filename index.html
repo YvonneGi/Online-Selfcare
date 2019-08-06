@@ -14,66 +14,43 @@
     <div class="container-fluid">
         <div class="col-sm-12">
             <div class="jumbotron">
-                <div class="menuicon" onclick="myFunction(this)" id="home">
-                    <div id="menuicon1"></div>
-                    <div id="menuicon2"></div>
-                    <div id="menuicon3"></div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Period Cycle</a>
+                    <a href="#">Contact us</a>
                 </div>
-                <!-- <div class="items">
-                        <h6>Home</h6>
-                        <h6>About Us</h6>
-                        <h6>Contat Us</h6>
-                        <h6>Your cycle</h6>
-        
-                    </div> -->
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <!-- <a class="navbar-brand" href="#">Navbar w/ text</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button> -->
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
             </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <h2 style="text-align: center" >About Us</h2>
-                <!-- <p>This is a web Application that will help every girl who want to know their period cycle and how want
-                    to know more About -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 style="text-align: center">About Us</h2>
                     <p>
-                    Caring for ourselves ensures we are the best we can be. By paying attention to your own self-care you will feel more connected to yourself and the world around you
-                     Self-care is important for your family and friends too. They learn from you, so taking care of yourself shows them that they need to do so too.
-                    Having a well-cared-for body can make you feel good about yourself and your life, and conveys to others that you value yourself.</p>
-                </p>
-            </div>
-            <div class="col-sm-6">
-                <h2>Give us Feedback</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="comment">Comment:</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea> <br>
-                        <button type="button" class="btn btn-success">Send</button>
-                    </div>
-                </form>
+                        Caring for ourselves ensures we are the best we can be. By paying attention to your own
+                        self-care
+                        you will feel more connected to yourself and the world around you
+                        Self-care is important for your family and friends too. They learn from you, so taking care of
+                        yourself shows them that they need to do so too.
+                        Having a well-cared-for body can make you feel good about yourself and your life, and conveys to
+                        others that you value yourself.</p>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Give us Feedback</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea> <br>
+                            <button type="button" class="btn" style="background-color: pink">Send</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <h1></h1>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
+        <h1></h1>
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/scripts.js"></script>
 </body>
 
 </html>
