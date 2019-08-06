@@ -29,11 +29,24 @@
                 box-shadow:0 4px 6px 0 #CC0066   , 0 4px 10px 0#CC0066   ;  
             }
             button{
-                color:white;
-                background-color: #FF33FF  ;
+                color:black;
+                background-color: #FF33FF ;
+
                 
             }
-            
+            button:hover{
+background: white;
+            }
+            #birthdate{
+                width: 30%;
+                height: 5%;
+                
+            }
+            #period{
+              width: 35%;
+              height: 5%;  
+            }
+
         </style>
         <!-- <script src="main.js"></script> -->
     </head>
@@ -47,13 +60,13 @@
                 <div id="dat">
 
                     <form>
-                        <h1>  know how  to calculate your menstual period</h1>
+                        <h1> How  to calculate your menstruation Cycle</h1>
                         <h4> Enter The first day of your period</h4>
                         <label>Date:</label>
                         <input type="date" id="birthdate" />
                         <br><br>
                         <h4>choose lenght of your period</h4>
-                        <select>
+                        <select id="period">
 
                             <option>period lenght</option>
                             <option>20 days</option>
