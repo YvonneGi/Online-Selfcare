@@ -1,5 +1,7 @@
 .jumbotron{
     background-color: #FF66CC;
+    margin-bottom: 0;
+    padding-bottom: 1%;
 }
   /* The side navigation menu */
 .sidenav {
@@ -55,4 +57,7 @@
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-size: 30px;
       color: whitesmoke;
+  }
+  #sp{
+    padding-bottom:100px;
   }
