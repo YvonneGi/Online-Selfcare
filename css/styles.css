@@ -22,10 +22,11 @@
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 20px;
-    color: #818181; 
+    font-size: 25px;
+    color: #ECF0F1; 
     display: block;
     transition: 0.3s;
+    font-style: bold;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -38,7 +39,7 @@
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 40px;
     margin-left: 50px;
   }
   
@@ -57,9 +58,6 @@
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-size: 50px;
       color: #2C3E50;
-  }
-  #sp{
-    padding-bottom:100px;
   }
   #para{
   font-family: 'Open Sans Condensed', sans-serif;
@@ -127,3 +125,15 @@ nav ul li a:hover {
   margin-left: 50px;
   margin-right: 50px;
 }
+  .button {
+    background-color:  #2C3E50;
+    border: none;
+    color: #FFCCCC;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 3px 1.5px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
