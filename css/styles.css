@@ -104,3 +104,21 @@ nav ul li a:hover {
     color: #FFCCCC;
     text-decoration: none;
 }
+.footer{
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
+.fa:hover {
+    color: black;
+}
+
+.fa-facebook,  .fa-twitter, .fa-youtube,  .fa-instagram{
+  color: #ECF0F1;
+  padding: 10px;
+}
+.hr{
+  border: 1px solid #ECF0F1;
+  margin-left: 50px;
+  margin-right: 50px;
+}
