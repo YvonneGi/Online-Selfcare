@@ -1,0 +1,139 @@
+.jumbotron{
+    background-color: #FFCCCC;
+    margin-bottom: 0;
+    padding-bottom: 1%;
+}
+  /* The side navigation menu */
+.sidenav {
+    height: 40%;
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    /* background-color: #111;  */
+    background: rgba(0,0,0,1);
+    overflow-x: hidden; 
+    padding-top: 60px;
+    transition: 0.5s; 
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ECF0F1; 
+    display: block;
+    transition: 0.3s;
+    font-style: bold;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+   .sidenav a:hover {
+    color: #f1f1f1;
+  } 
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 40px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  } 
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  #head1{
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 50px;
+      color: #2C3E50;
+  }
+  #para{
+  font-family: 'Open Sans Condensed', sans-serif;
+   text-align:center; 
+   font-size:20px;
+   text-align: center;
+  }
+  #h2{
+    text-align: center;
+    text-decoration: underline wavy #FFCCCC;
+    color:#2C3E50;
+  }
+  body{
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-right: 5%;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2C3E50;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), insert 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgb(235, 222, 240);
+    color: #FFCCCC;
+    text-decoration: none;
+}
+.footer{
+  background-color: #2C3E50;
+  color: #ECF0F1;
+}
+
+.fa:hover {
+    color: black;
+}
+
+.fa-facebook,  .fa-twitter, .fa-youtube,  .fa-instagram{
+  color: #ECF0F1;
+  padding: 10px;
+}
+.hr{
+  border: 1px solid #ECF0F1;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.fa-phone{
+  font-size: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+  .button {
+    background-color:  #2C3E50;
+    border: none;
+    color: #FFCCCC;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 3px 1.5px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
