@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up form</title>
+    <style>
+        body{
+          margin: 0;
+          padding:0;
+          background: #efefef;
+          font-size: 16px;
+          color: #777;
+          font-family: sans-serif;
+          font-weight: 300;
+        }
+        #form{
+           position: relative;
+           margin: 5% auto;
+           height: 480px;
+           background: #fff;
+           box-shadow: 0 2px 4px rgba(0, 0,0, 0.6);
+        }
+        .user-box{
+          position: absolute;
+          top: 0;
+          left: 0;
+          box-sizing: border-box;
+          padding: 40px;
+          width: 300px;
+          height: 400px;
+        }
+        h1{
+          margin: 0 0 20px 0;
+          font-weight: 300;
+          font-size:28px;
+        }
+        input[type="text"],
+        input[type="password"]
+        {
+        display: block;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 4px;
+        width: 220px;
+        height: 32px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #aaa;
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        transition: 0.2s ease;
+        }
+        input[type="submit"]{
+          margin-bottom: 28px;
+          width: 120px;
+          height: 32px;
+          background: #912344;
+          border: none;
+          border-radius: 2px;
+          color: #fff;
+          font-family: sans-serif;
+          font-weight: 500;
+          text-transform: uppercase;
+          transition: 0.2px ease;
+          cursor: pointer; 
+        }
+        input[type="submit"]:hover,
+        input[type="submit"]:focus{
+          background: pink;
+          transition: 0.2s ease;
+        }
+        .admin-box{
+          position: absolute;
+          top: 0;
+          right: 0;
+          box-sizing: border-box;
+          padding: 40px;
+          width: 300px;
+          height: 400px;
+        }
+        .admin-box input[type="submit"]{
+          margin-bottom: 28px;
+          width: 120px;
+          height: 32px;
+          background: #5aa13d;
+          border: none;
+          border-radius: 2px;
+          color: #fff;
+          font-family: sans-serif;
+          font-weight: 500;
+          text-transform: uppercase;
+          transition: 0.2px ease;
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <div class="user-box">
+          <h1>Sign up</h1>
+          <input type="text" name="fName" placeholder="firstName"/>
+          <input type="text" name="lName" placeholder="lastName"/>
+          <input type="text" name="username" placeholder="username"/>
+          <input type="text" name="email" placeholder="Email"/>
+          <input type="password" name="password" placeholder="password"/>
+          <input type="password" name="password2" placeholder=" Rtype-password"/>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="submit" name="submit-button" value="Sign up"/>
+          
+        </div>
+        <div class="admin-box">
+          <input type="text" name="username" placeholder="adminName"/>
+          <input type="text" name="email" placeholder="Email"/>
+          <input type="password" name="password" placeholder="password"/>
+          <input type="submit" name="submit-button" value="Login"/>
+        </div>
+</body>
+</html>
