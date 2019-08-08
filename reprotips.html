@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <title>Reproductive health</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,6 +19,90 @@
 </head>
 
 <body>
+    <div class="container-fluide">
+        <div class="jumbotron">
+            <h2 id="hd">Online Self Care</h2>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="reprotips.html">Reproductive Health</a>
+                <a href="#">Period Calculator</a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="sp"
+                style="color: #2C3E50">&#9776; Self Care</span>
+            <div id="nav">
+                <nav>
+                    <ul> <b>
+                            <li> <a href="#">Sign Up</a> </li>
+                            <li> <a href="#">Login</a> </li>
+                        </b>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+              <div class="bd-example">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/bckrgnd.jpg" class="d-block w-100" alt="..." height="500px">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 id="h5">LEARN MORE ABOUT<br><br><strong>REPRODUCTIVE  HEALTH</strong></h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                          <a href="#repro"><img src="images/female-front.jpeg" class="d-block w-100" alt="..." height="500px">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5 id="h5">Learn about<br><br><strong>Female reproductive system</strong></h5></a>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                     <a href="#menstrual"><img src="images/menstrual -cycle.jpg" class="d-block w-100" alt="..." height="500px">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 id="h5">Learn about<br><br><strong>Your Menstrual Cycle</strong></h5></a> 
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                    <a href="#ovulation"><img src="images/Ovulation.jpg" class="d-block w-100" alt="..." height="500px">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5 id="h5">Learn about<br><br><strong>Your Ovulation</strong></h5></a>  
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                     <a href="#periods"><img src="images/periods.webp" class="d-block w-100" alt="..." height="500px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 id="h5">Learn about<br><br><strong>Your Periods</strong></h5></a>   
+                        </div>
+                      </div>
+                    <div class="carousel-item">
+                    <a href="#cramps"><img src="images/Period-pain.jpg" class="d-block w-100" alt="..." height="500px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 id="h5">Know<br><br><strong>The cause of menstrual cramps</strong></h5></a>    
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                       <a href="#black"><img src="images/BlackBlood.jpg" class="d-block w-100" alt="..." height="500px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 id="h5">Know<br><br><strong>The cause of Black Blood in periods</strong></h5></a> 
+                        </div>
+                      <div class="carousel-item">
+                      <a href="#p-two"><img src="images/iron-and-menstruation-image-1.jpg" class="d-block w-100" alt="..." height="500px">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5 id="h5">Know <br><br><strong>The cause two periods in one month</strong></h5></a>  
+                        </div>
+
+                  </div>
   <div class="container-fluide">
     <div class="row">
       <div class="col-sm-12">
@@ -57,6 +149,129 @@
               <h5 id="h5">Learn about<br><br><strong>Your Periods</strong></h5></div>
           </a>
         </div>
+        <div class="row">
+                    <div class="col-md-4" id="cramps">
+                            <img src="images/Period-pain.jpg" alt="painful" width="300px" height="300px">
+                            <h4 id="head1"><strong>Origins of Menstrual Cramps</strong></h4>
+                            <p>
+                            <ul id="parf1">
+                                <li>Prostaglandins chemicals.</li>
+                                <li>Endometriosis-uterine tissue that appears outside the uterus.</li>
+                                <li>Fibroids and adenomyosis-noncancerous (benign) growths in the uterus</li>
+                                <li>Infections in the reproductive organs.</li>
+                                <li>Abnormal pregnancy, such as an ectopic pregnancy.</li>
+                                <li>Ovarian cyst.</li>
+                                <li>Narrow cervix.</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-4" id="black">
+                            <img src="images/BlackBlood.jpg" alt="black" width="300px" height="300px">
+                            <h4 id="head2"><strong>Causes of Black Periods Blood</strong></h4>
+                            <p>
+                            <ul id="parf2">
+                                <li>It is just te start(or end) of your periods.</li>
+                                <li>Someting may be stuck inside you.</li>
+                                <li>Retained menses or hematocolpos.</li>
+                                <li>It may indicate cervical cancer.</li>
+                                <li>A missed misscarriage.</li>
+                                <li>Implantation bleeding.</li>
+                                <li>Sexually transmitted diseases.</li>
+                                <li>Pelvic inflamatory disease.</li>
+                            </ul> </p>
+                    </div>
+                    <div class="col-md-4" id="p-two">
+                        <img src="images/iron-and-menstruation-image-1.jpg" alt="twoperiods" height="300px" width="300px">
+                        <h4 id="head3"><strong>Causes of two periods in one month</strong></h4>
+                        <p>
+                        <ul id="parf3">
+                            <li>One-time anomaly</li>
+                            <li>Young age</li>
+                            <li>Endometriosis</li>
+                            <li>Perimenopause</li>
+                            <li>Perimenopause</li>
+                            <li>Thyroid problems</li> 
+                            <li>Uterine fibroids</li>
+                            <li>Shorter menstrual cycle</li>            
+                        </ul>
+                    </ps>
+                </div> 
+            </div>
+    </div>
+    <div id="footer">
+        <div class="row">
+            <div class="col-sm-4">
+                <div style="margin-left: 50px;">
+                    <h3 style="font-size: 30px;">Quick Link</h3> <br>
+                    <ul>
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Reproductive Health</li>
+                        <li>Period Calculator</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h3 style="font-size: 30px;">Recent Post</h3>
+                <ul>
+                    <li>Learn about Your Menstrual Cycle</li>
+                    <li>Learn about Your Ovulation</li>
+                    <li>Learn about your Periods</li>
+                    <li>Origins of Menstrual Cramps</li>
+                    <li>The cause Black Blood in period</li>
+                    <li>The cause two periods in one month</li>
+                    <li>Tips</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3 style="font-size: 30px;">Get In Touch</h3>
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <h4>You can visit Our social media account</h4>
+                <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://twitter.com/twitter?lang=en" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube" target="_blank"></a>
+                <a href="https://www.instagram.com/?hl=en" target="_blank" class="fa fa-instagram"></a>
+            </div> <br>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <hr class="hr">
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <i class="fa fa-phone" style="font-size: 20px;"> Call Us</i><br>
+                <p style="margin-left: 50px;">0782947093 <br> 0787873242</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa fa-envelope" style="font-size: 20px;"> Email Us</i><br>
+                <p>selfcare5@gmail.com</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa fa-map-marker" style="font-size: 20px;"> Location</i><br>
+                <p>Kimironko <br> Kigali, Rwanda</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <hr class="hr">
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <p id="copy" style="text-align: center;">&copy; 2019 Copy Right All right reserved.<p></p>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
       <div class="carousel-item">
         <a href="#cramps"><img src="images/Period-pain.jpg" class="d-block w-100" alt="..." height="500px">
           <div class="carousel-caption d-none d-md-block">
