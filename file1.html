@@ -1,0 +1,148 @@
+<DOCTYPE.<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/styles1.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <style>
+            body{
+             background-color: white;
+            /* box-shadow:0 4px 6px 0 #B9770E , 0 4px 10px 0 #B9770E ;  */
+            }
+            #dat{
+                margin-top: 100px;
+            }
+            form{
+                text-align: center;
+                border: 1%; 
+            }
+            .card{
+                background-color:pink;
+               width: 60%;
+               height:80%;
+               text-align: center;
+               margin-left: 25%;
+                box-shadow:0 4px 6px 0 pink  , 0 4px 10px 0 pink ;  
+            }
+            button{
+                color:black;
+                background-color: #FF33FF ;
+
+                
+            }
+            button:hover{
+            background: white;
+            }
+            #birthdate{
+                width: 30%;
+                height: 5%;
+                
+            }
+            #period{
+              width: 35%;
+              height: 5%;  
+            }
+
+        </style>
+        <!-- <script src="main.js"></script> -->
+    </head>
+
+    <body>
+
+        <div class="col-md-12">
+
+            <br><br><br>
+            <div class="card">
+                <div id="dat">
+
+                    <form>
+                        <h1> How to calculate your menstruation Cycle</h1>
+                        <h4> Enter The first day of your period</h4>
+                        <label>Date:</label>
+                        <input type="date" id="birthdate" />
+                        <br><br>
+                        <h4>choose lenght of your period</h4>
+                        <select id="period">
+
+                            <option aria-placeholder="period lenght"></option>
+                            <!-- <option>20 days</option>
+                            <option>21 days</option>
+                            <option>22 days</option>
+                            <option>23 days</option>
+                            <option>24 days</option>
+                            <option>25 days</option>
+                            <option>26 days</option>
+                            <ption>27 days</option> -->
+                                <option>28 days</option>
+                                <!-- <option>29 days</option>
+                                <option>30 days</option>
+                                <option>31 days</option>
+                                <option>32 days</option>
+                                <option>32days</option>
+                                <option>33 days</option>
+                                <option>34 days</option>
+                                <option>35 days</option> -->
+
+                        </select>
+                        <br><br>
+                        <input type="button" name="" value="Get" id="submit" onclick="getPeriod()"> 
+                    </form>
+                </div>
+                </card>
+            </div>
+        </div>
+        <script>
+          function getPeriod(){
+              var date= document.getElementById("birthdate").value;
+              var array =date.split("-");
+              console.log("month:",date);
+              var dd = parseInt(array[2]);
+              var mm = parseInt(array[1]);
+              var yy = parseInt(array[0]);
+              console.log("year : "+ yy + "month :" + mm + "day: "+ dd);
+              var day0=31;
+ var day1 =30;
+ var day2 =28;
+ var day3 =29;
+ var ovulation,period,result;
+    if(day0 ==31){
+  period = (dd +28) -day0;
+ alert( "your next date of period is : " + period );
+ ovulation = period/ 2;
+ result = Math.round(ovulation);
+ alert( " your next  date of ovulation is : " +result);
+ }
+ else if(day1 ==30){
+ period = (dd +28) -day1;
+ alert("your next date of  period is : " + period );
+ ovulation = period/ 2;
+ result = Math.round(ovulation);
+ alert( " your next  date of ovulation is : " + result);
+ }
+ else if( day2 ==29){
+ period = (dd +28) -day2;
+ alert("your next date of period is : " + period );
+  ovulation = period/ 2;
+ result = Math.round(ovulation);
+ alert(" your next  date of ovulation is : "+ result);
+ }
+ else{
+  period = (dd +28) -day3;
+ alert("your next  date of period is : " + period );
+ ovulation = period/ 2;
+ result = Math.round(ovulation);
+ alert(" your next  date of ovulation is : " + result);
+ }
+
+
+
+
+          }
+        </script>
+    </body>
+
+    </html>
