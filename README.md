@@ -17,7 +17,7 @@ Our project is designed to help young girls and other womens who doesn't know ho
 * Visual Studio
 ## Support and contact details
 * E-mail:giryvonne@gmail.com
-*        kangabejuliette@gmail.com 
+* E-mail:kangabejuliette@gmail.com 
 * Phone-Number:(250)783230882&
                 250787873242
 ### License
