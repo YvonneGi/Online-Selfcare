@@ -10,3 +10,8 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.body.style.backgroundColor = "white";
   }
+
+  $(function(){
+    $("#header").load("reprotips.html"); 
+    $("#footer").load("footer.html"); 
+  });
