@@ -28,6 +28,7 @@
           left: 0;
           box-sizing: border-box;
           padding: 40px;
+          /* margin-left:35%; */
           width: 300px;
           height: 400px;
         }
@@ -100,22 +101,51 @@
 <body>
     <div id="form">
         <div class="user-box">
-          <h1>Sign up</h1>
-          <input type="text" name="fName" placeholder="firstName"/>
-          <input type="text" name="lName" placeholder="lastName"/>
-          <input type="text" name="username" placeholder="username"/>
-          <input type="text" name="email" placeholder="Email"/>
-          <input type="password" name="password" placeholder="password"/>
-          <input type="password" name="password2" placeholder=" Rtype-password"/>
-          <input type="radio" name="gender" value="female"> Female<br>
-          <input type="submit" name="submit-button" value="Sign up"/>
+          <h1><b>Sign Up</b></h1>         
+          <input type="text" name="fName" id="one" placeholder="firstName"/>
+          <input type="text" name="lName"  id="two"placeholder="lastName" />
+          <input type="text" name="email"   id="three" placeholder="email"  required>
+          <input type="text" name="username"  id="four" placeholder="username"   required>
+          <input type="password" name="password"  id="five"placeholder="password" />
+          <input type="password" name="password2" placeholder=" confirm-password"/>
+          <input type="radio" name="gender" value="female" id="female"> Female<br><br>
+          <a href="period.html"><input onclick ="getData()" type="submit" name="submit-button" id="btn" value="Sign up"/></a>
           
         </div>
-        <div class="admin-box">
-          <input type="text" name="username" placeholder="adminName"/>
-          <input type="text" name="email" placeholder="Email"/>
-          <input type="password" name="password" placeholder="password"/>
-          <input type="submit" name="submit-button" value="Login"/>
-        </div>
+        
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+<script src="jquery-3.4.1.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyByLETOD_-t8zQLXjEQPIzi19CqWTJMVFI",
+    authDomain: "online-selfcare-17106.firebaseapp.com",
+    databaseURL: "https://online-selfcare-17106.firebaseio.com",
+    projectId: "online-selfcare-17106",
+    storageBucket: "",
+    messagingSenderId: "619147759371",
+    appId: "1:619147759371:web:1b587ba2e53fa2bc"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  var database =firebase.database();
+  var ref= database.ref("Sign up");
+  function getData(){
+    var data = {
+      firstName:document.getElementById("one").value,
+      lastName:document.getElementById("two").value,
+      email:document.getElementById("three").value,
+      userName:document.getElementById("four").value,
+      password:document.getElementById("five").value,
+      gender:document.getElementById("female").checked
+    }
+    ref.push(data);
+  }
+ 
+</script>
 </body>
 </html>
