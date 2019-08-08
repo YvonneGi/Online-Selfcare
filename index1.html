@@ -28,7 +28,7 @@
           left: 0;
           box-sizing: border-box;
           padding: 40px;
-          margin-left:35%;
+          /* margin-left:35%; */
           width: 300px;
           height: 400px;
         }
@@ -108,22 +108,17 @@
           <input type="text" name="username"  id="four" placeholder="username"   required>
           <input type="password" name="password"  id="five"placeholder="password" />
           <input type="password" name="password2" placeholder=" confirm-password"/>
-          <input type="radio" name="gender" value="female"> Female<br><br>
-          <input onclick ="getData()" type="submit" name="submit-button" value="Sign up"/>
+          <input type="radio" name="gender" value="female" id="female"> Female<br><br>
+          <a href="period.html"><input onclick ="getData()" type="submit" name="submit-button" id="btn" value="Sign up"/></a>
           
         </div>
-        <!-- <div class="admin-box">
-          <input type="text" name="username" placeholder="adminName" required/>
-          <input type="text" name="email" placeholder="Email" />
-          <input type="password" name="password" placeholder="password" />
-          <input type="submit" name="submit-button" value="Login"/>
-        </div> -->
+        
         <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
-
+<script src="jquery-3.4.1.js"></script>
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -145,10 +140,12 @@
       lastName:document.getElementById("two").value,
       email:document.getElementById("three").value,
       userName:document.getElementById("four").value,
-      password:document.getElementById("five").value
+      password:document.getElementById("five").value,
+      gender:document.getElementById("female").checked
     }
     ref.push(data);
   }
+ 
 </script>
 </body>
 </html>
